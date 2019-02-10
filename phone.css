@@ -1,0 +1,75 @@
+* {box-sizing: border-box}
+
+
+/* Style tab links */
+.tablink {
+  background-color: #db97fc;
+  color: white;
+  float: left;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #e2bcf4;
+    padding: 14px 16px;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  display: none;
+  padding: 100px 20px;
+  padding-left: 100px;
+  height: 100%;
+}
+
+
+body{
+  background-color: #f9f9f9;
+}
+table{
+  margin-left: 200px;
+}
+input{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+input:hover{
+  background-color: #e2bcf4;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+button{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+button:hover{
+  background-color: #e2bcf4;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.listItem{
+  font-size: 14px;
+  padding: 10px;
+
+}
+#subButton{
+  background-color: #EAEAE9;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#subButton:hover{
+  background-color:  #e2bcf4;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#dialer0, #dialer2, #dialer3, #dialer4, #dialer5, #dialer6, #dialer7, #dialer8, #dialer9, #dialer1, #dialer_octothorpe, #dialer_star{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#button_dialer_clear, #button_dial{
+  padding-left: 13px;
+  padding-right: 13px;
+}

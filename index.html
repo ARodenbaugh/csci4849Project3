@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Phone Demo</title>
+    <link rel="stylesheet" href="phone.css">
+  </head>
+
+  <body>
+  <div role="navigation">
+    <button class="tablink" id="DialerBtn" tabindex="0" accesskey="d"><u>D</u>ialer</button>
+    <button class="tablink" id="ContactListBtn" tabindex="0" accesskey="c"><u>C</u>ontact List</button>
+    <button class="tablink" id="AddContactBtn" tabindex="0" accesskey="a"><u>A</u>dd Contact</button>
+    <button class="tablink" id="HelpBtn" tabindex="0" accesskey="h"><u>H</u>elp</button>
+  </div>
+  <!-- Dialer Section -->
+  <div id="Dialer" class="tabcontent" role="main" aria-live="polite">
+          <img src="dialer.jpg" alt="Cell Phone Icon" style="width:80px;height:60px">
+  		      <h3>Dialer</h3>
+  			  <form>
+  				  <input id="number_input" style="padding-right: 45px;">
+  			  </form>
+  			  <div id="dialer_pad">
+  				  <div>
+  					  <button id="dialer1" accesskey="1">1</button>
+  					  <button id="dialer2" accesskey="2">2</button>
+  					  <button id="dialer3" accesskey="3">3</button>
+  				  </div>
+  				  <div>
+  					  <button id="dialer4" accesskey="4">4</button>
+  					  <button id="dialer5" accesskey="5">5</button>
+  					  <button id="dialer6" accesskey="6">6</button>
+  				  </div>
+  				  <div>
+  					  <button id="dialer7" accesskey="7">7</button>
+  					  <button id="dialer8" accesskey="8">8</button>
+  					  <button id="dialer9" accesskey="9">9</button>
+  				  </div>
+  				  <div>
+  					  <button id="dialer_star" accesskey="x 8">*</button>
+  					  <button id="dialer0" accesskey="0">0</button>
+  					  <button id="dialer_octothorpe" accesskey="x 3">#</button>
+  				  </div>
+  			  </div>
+  			  <div id="dialer_controls">
+  				  <button id="button_dial" accesskey="=">Dial (AK: +)</button>
+  				  <button id="button_dialer_clear" accesskey="-">Clear (AK: -)</button>
+  			  </div>
+  		  </div>
+
+  <!-- Contact List Section -->
+      <div id="ContactList" class="tabcontent" role="main" aria-live="polite">
+        <img src="contactlist.png" alt="Address Book Icon" style="width:60px;height:60px">
+        <h3>Contact List</h3>
+        <table border="1">
+        <tr>
+          <th>Name</th>
+          <th>Phone Number</th>
+          <th>Email Address</th>
+        </tr>
+        <tr>
+        <td><button class="listItem">Danielle Brown</button></td>
+        <td><button class="listItem">720 555 6854</button></td>
+        <td><button class="listItem">dabr@gmail.com</button></td>
+        </tr>
+        <tr>
+        <td> <button class="listItem">Shey Ellerbruch</button></td>
+        <td><button class="listItem">720 555 3323</button></td>
+        <td><button class="listItem">shel@gmail.com</button></td>
+        </tr>
+        <tr>
+        <td> <button class="listItem">Marissa Tracy</button></td>
+        <td><button class="listItem">303 555 2345</button></td>
+        <td><button class="listItem">matr@gmail.com</button></td>
+        </tr>
+      </table>
+      </div>
+
+  <!-- Add Contaqct Section -->
+      <div id="AddContact" class="tabcontent" role="main" aria-live="polite">
+        <img src="addcontact.jpeg" alt="Add Contact Icon" style="width:60px;height:60px">
+        <h3>Add Contact</h3>
+        <form >
+          <u>N</u>ame:<br>
+          <input type="text" placeholder="Allison Rodenbaugh" tabindex="0" accesskey="n">
+          <br>
+          <u>P</u>hone Number:<br>
+          <input type="text" placeholder="303-555-1234" tabindex="0" accesskey="p">
+          <br>
+          <u>E</u>mail Address:<br>
+          <input type="text"  placeholder="roden1@yahoo.com" tabindex="0" accesskey="e">
+          <br><br>
+          <input id="subButton" type="submit" value="Add Contact" tabindex="0">
+        </form>
+      </div>
+
+      <!-- Help Section -->
+      <div id="Help" class="tabcontent" role="main" aria-live="polite">
+        <img src="helpicon.png" alt="Question Mark Icon" style="width:60px;height:60px">
+        <h3>Accessibility Features</h3>
+          <ui>
+            <li>Tab control</li>
+            <li>Accessibility Keys</li>
+            <li>Accessible Tables</li>
+            <li>Captioned Images</li>
+            <li>ARIA Landmark Rles</li>
+            <li>Aria Live Regions</li>
+          </ui>
+        <table border="1" style="margin-left: 200px;">
+        <tr>
+          <th>Feature</th>
+          <th>Access Key</th>
+        </tr>
+        <tr>
+        <td>Dialer Tab</td><td style="text-align: center;"> D </td>
+        </tr>
+        <tr>
+        <td>Dial Button</td><td style="text-align: center;"> + </td>
+        </tr>
+        <tr>
+        <td>Clear Button</td><td style="text-align: center;"> - </td>
+        </tr>
+        <tr>
+        <td>Contact List Tab</td><td style="text-align: center;"> C </td>
+        </tr>
+        <tr>
+        <td>Add Contact Tab</td><td style="text-align: center;"> A </td>
+        </tr>
+        <tr>
+        <td>Name Input</td><td style="text-align: center;"> N </td>
+        </tr>
+        <tr>
+        <td>Phone Number Input</td><td style="text-align: center;"> P </td>
+        </tr>
+        <tr>
+        <td>Email Input</td><td style="text-align: center;"> E </td>
+        </tr>
+        <tr>
+        <td>Help Tab</td><td style="text-align: center;"> H </td>
+        </tr>
+      </table>
+      <h3 style="padding-top: 50px;">Image Citations</h3>
+      <table border="1" style="margin-left: 0px;">
+      <tr>
+        <th>Image Description</th>
+        <th>Image Source</th>
+      </tr>
+      <tr>
+      <td>Cellphone Icon</td><td> https://www.shutterstock.com/es/video/clip-11287715-ringing-vibrating-cellphone-animated-vector-image-on</td>
+      </tr>
+      <tr>
+      <td>Contact List Icon</td><td> https://thenounproject.com/term/contact-list/ </td>
+      </tr>
+      <tr>
+      <td>Add Contact Icon</td><td> http://chittagongit.com/icon/add-contact-icon-7.html </td>
+      </tr>
+      <tr>
+      <td>Question Mark Icon</td><td> https://www.iconfinder.com/icons/176266/q_and_a_question_question_mark_icon </td>
+      </tr>
+
+    </table>
+      </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="phone.js"></script>
+  </body>
+</html>
